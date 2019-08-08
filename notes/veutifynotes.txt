@@ -1,0 +1,25 @@
+From: https://vuetifyjs.com/en/getting-started/quick-start
+
+Get started once with veutify for all projects:
+
+npm install @vue/cli -g
+
+npm install -g @vue/cli-service-global   so you can vue serve
+
+New App:
+cd into acoustic-podcast (since I have notes and stuff)
+
+vue create acoustic-podcast
+
+(probably fills up my disk)
+
+Make it pretty
+
+vue add vuetify
+
+I chose default....
+
+npm run serve
+
+
+

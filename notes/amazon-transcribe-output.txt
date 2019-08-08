@@ -1,0 +1,133 @@
+
+
+spk_0 : this is Episode 321 of the AWS Podcast released on July 14th 2019 Podcast confirmed. Welcome to the official AWS
+
+spk_1 : podcast. Levan, Welcome back to Eddie Was put Cast some real issue with you. Great. Two heavy back and I'm joined in person by Gerada A stubborn who is the solutions I could take your labia. AWS Welcome, Dorado. Hello, Simon. Great to be here. Good. Too heavy here. Now you're originally Venezuelan born, I believe.
+
+spk_2 : Yes. The born in Venezuela Moved Thio Australians have been living here for the last 10 years of incident. Not
+
+spk_1 : here in Melbourne with Well, you know you can't have everything, I guess, But at least you hearing Australia. So you've come on the show today. Thio, help us dive deep into Sam. Yeah,
+
+spk_2 : one of my best friends.
+
+spk_1 : Your mate Sam. So Sam or the Civil Supplication model is something very relevant. Two serverless. We're not going to dive into the concept of civilised dipped. To say that a lot of people are doing civilised application development.
+
+spk_2 : Certainly So I've seen customers here in Australia building backhands for mobile applications, building chatbots web applications that are processing it If it's Realtor time or batch these days, you can do everything with several
+
+spk_1 : ist. So having service is one thing. But having a good developer experience is a completely different thing. Agree. And that's really what the Civil Supplication model of Sam was crying before. So tell us what what he Sam
+
+spk_2 : so rightly like. You said. Several architectures are building several architecture. It's a complete new paradigm, not complete but a couple of years old. And Bill, there's normally need the right tools so that these new parlor things become easier for them and only using the right tools. Then they can significantly increase the speed at which they can deliver the software, but also the quality of the software. So Sam is one of those tools, one of my favorites. What it does is it makes it easy to create management of date, a civilised application and open source. Yeah, so it's an open source framework on DDE. What it does is basically allows you to define infrastructures code to finding those serverless components with a lot. Let's code that would you normally would
+
+spk_1 : use. So this feels a lot like CloudFormation. So how does this fit in with that world
+
+spk_2 : so that the background CloudFormation is We know that many of the performance that are bad right, because they are, and they could be inconsistent and prone to errors. And builders have been defining infrastructure, a skull with tools like eight of his confirmation. And I particularly love CloudFormation. There's so many things you can do with it. But when it comes to creating service applications, since once the star using hundreds or thousands of Lambda Functions and interacting with your AP eyes, you need something that kind of abstract. The You know, all the all the complexity around, setting these things up, and this is exactly where some comes in. So, son, you can think of it. I say higher level obstruction to cut CloudFormation that's still using confirmation in the background. So you're still creating of dating and resources using CloudFormation. But with Sam, you create the syntax of you ride. It's very simplified, which means less could you need to write faster development, creation and overall happier developments.
+
+spk_1 : As a developer, you may choose to only interact at the same lie, arrive and doing CloudFormation person.
+
+spk_2 : Correct. Sam supports everything the CloudFormation does so you can combine in the same template resources returning Samson tax or in confirmation syntax and the structure is the same. So you have just like a confirmation template. You have a heather, you have parameters. You have map means conditions, resources, outputs. Some supports global parameters, intrinsic functions. So there's a lot of things you can
+
+spk_1 : from building a serverless application. Typically, I'm creating some sort of a PR Endpoint. I've got a store state, often system are DynamoDB et cetera. The same. Let me stitch all that together. Is that is that how should be thinking about it?
+
+spk_2 : Absolutely so with Sam at the moment. There are far type of resources that you can define. You have functions for. Italy is Lambda Functions. You have a P I. And this is for Amazon. AP I Gateway. We do not have yet support for railways appsync, but it's one of the most requested features for state like you, said DynamoDB. So you can create simple tables with DynamoDB, and we recently on the back of the announcements, were made at reinvent last year. Be announced support for Lambda Layers and we define applications using Sam, and this is on the back of the announcement of the severest application repositories.
+
+spk_1 : And so that repositories, that's that's really a place that people can share their code in a way that can be reused by others or uses a basis. It creates that community around which people can really
+
+spk_2 : absolutely so. It's a service that helps this cover deploy and published several applications, and you can do that publicly if you want. If you feel like sharing with the world or you can do it privately in a sign I am Policies 2 2 filter. Who can access that within your organization? So all it is the several navigation model or SAR, just to get another acronym is a managed repositories for several applications that enables teams, organizations and individual developers to store and share these several its applications easily, very easily.
+
+spk_1 : That's kind of a purpose built solution, for if I mean a large organization, lots of developers and we're building our service is is a place we can go to see what has someone built this
+
+spk_2 : before, correct? So you can start using code instead of creating everything from scratch, which is what we do as developers all the time, right wouldn't wanna be creating everything someone else
+
+spk_1 : did it before. Exactly. Exactly. Quite quite being a lazy developers, a good developer, I think. I agree SOC 1 thing else that developers love these command line interface. Tell us about the Samsel. Yes,
+
+spk_2 : so there's more to send than justice. Simplify syntax. So Sam comes with the sea. Elias Well, and what it does is basically brings the power of Sam and Italy slammed. It's your local machine, so Lamda normally runs in the cloud runs on edge locations as well. If you if you want to do some local development, if you want to have the experience of local development, where you can touch test things in your in your own idea if you're using ah 90 in your in your chain and some locals bringing all that close to your machine. But what you can do there is local testing in the bargain of several application. So it's a way to summarize is it's about giving developers this same experience they had in the world before several lists where they could author test and the bug in their local machine.
+
+spk_1 : So this is the classic. You know, I don't have connectivity for the Internet. I'm on the aeroplane of airplanes have Internet these days, but I don't need that. I don't need to upload to declare, do some testing, bring it down, etcetera. I'm doing it'll locally.
+
+spk_2 : Correct. So if you think about the developer experience, you're putting some code together and you want to test it. If you did it without Sam, this Sam C L A. You have top below that 2. Italy is lambda Make a change in Lambda Console EKS. I don't know 10 2030 seconds. And that's not just not good enough for the Vela purse. We want immediate feedback on our applications, and that's what you get with some cli. You get Lambda Console recognition
+
+spk_1 : from running kind of that offline. That local mode is probably the correct way to say What can I do in terms of some of the connective service is, obviously we use a lot of things like kinesis streams and his 3 et CETRA. We're not running those, Luckily,
+
+spk_2 : no, not yet. Not yet, hopefully soon. But look, there are many things you can do with some cli locally. First off, you can invoke the Lambda Functions locally meaning that you can get responses and the Landau logs as well in your local machine without having any Internet connectivity. That helps you not only get, you know tested but also troubleshoot if there's any siege issues because you get the same lock so you would have gotten in card watch as well in terms of all of those resources you asked me for. You can create mark events for those so things like Amazon s 3 or Amazon FBI Gateway or Amazon DynamoDB streams or ENI ECS a swell. You can mock those and create the source events that you can trigger your lamb, that using something as if it comes from the cloud. But it doesn't
+
+spk_1 : so basically simulating those those interactions in a repeatable Bisys.
+
+spk_2 : Correct? Correct. It generates up a look. It's a Jason payload that you can just send to the Lambda Lambda invocation your local machine.
+
+spk_1 : So then, in my cycle, I'm sort of doing my work locally. I'm mocking out. I'm testing at some point. If I'm following good CNI. Sadie practices are integrating somewhere. Had a Sam work in that context.
+
+spk_2 : So there's a few things that Sam can help you do, and for the in terms of deployment on building and these things do. You do need Internet access for him so you can do Sam build, and what it does is basically it builds the dependencies for your code. So for things like, if you're running high things over, if you running know js hey, looks at the dependencies and installs that in your local machine. Two frequent commands that are used are Sam Package and Sam Deploy. So the 1st 16 everything up everything about your application, the template and the Lambda Console uploads. That's 2 s 3. And then, with some deployed, it executes that changing confirmations. Two either create or about your applications are with 2 commends Europe dating your entire application and also live in the code off those Italy is Lambda Functions,
+
+spk_1 : and so that helps you really have their whole into in process. It also means you can look into things like logging, etcetera,
+
+spk_2 : correct, so you can look into locks. You can other things again. Did you can initialize several applications? So if you go, Sam, innit? Can choose I the language you're using Sipe hyphen 2.7, and it creates that first kind of blank skeleton.
+
+spk_1 : That kind of getting started. He's the farm worker. Where you gonna
+
+spk_2 : correct? And you can usually use Sam in it for applications that have been publishing the service application repositories. So it basically gets you started in your local machine if you're starting from scratch.
+
+spk_1 : So we spoke before about land also running at the age Have a Sam fit into that world.
+
+spk_2 : Correct. For those that are not familiar with the concept of EJ computing a little B s Yale, this cloud today spends 66 availability sounds within 21 geographic regions. But we also have this concert off EJ locations, and we have over 170 of those around the world. And what we do with this actual occasions is basically because we have so many more of them and they're closer to the users of the applications. We leverage that for service is like Amazon CloudFront and about 50 3 so we can deliver those responses closer 2 or faster. Two this users. But it turns out that we also launched I service called Lambda Functions. This was about but 2 years ago. Don't quote me on that. I'm I'm going on record it is. It is a feature on Amazon CloudFront that allows you to run code closer to the user. So basically you're running coat at the without. Even hitting the AWS region
+
+spk_1 : is interesting. This is my architecture about this topic.
+
+spk_2 : Yes, that's Sydney Summit this year. I hosted a Macquarie Bank on, they explained. This is an Australian very popular bank, and they basically showed how they're used in how they are securing access to Web sites largely at the edge. Ah, fantastic, Fantastic use guys because they're doing all of these at the edge. There are only a couple of things that are running in the glorious region. We should probably share that
+
+spk_1 : lap pool caper, get a link out there and keep it on that syriza's well, which is a really good Siri's. Now we touched on deployment. I wanna come back to diploma because it's it's kind of a big enchilada here is that if we want to deploy often and safely, there are a lot of well established techniques around. How to do that is Canary deploys his blue green deployments, et cetera. But often tooling doesn't reflect that, and so it's hard to deploy one of things that Sam has, I think really help developers with these building that he doesn't 19th capabilities. So talk us through what we can do it.
+
+spk_2 : Correct. Sam can help with that 2. Apart from packaging the ploy commands that I talked about previously. The problem with that is that it's very simple, just 2 commands. But what it's doing is basically a one big switch. So you had a previous version of the coat. After you execute packaging deployed, you have a new version of the girl. That's it. You can have an impact, a significant blood
+
+spk_1 : EFA got only if you've got bugs in your code and certainly the code. You and I, right, never has bugs, others by exactly like stuff can go wrong. So
+
+spk_2 : look like Like you said, the concepts of things like Blue Green Deployments or Canary Deployments have been around for a while on this has been well established, its practices in reducing the risk for suffer developments so Sam can help with that. So let me give you some context how this all came about About a year and 1/2 ago, we released this concept off, and Italy Islam, there at aliases and what it is is basically a way to point to your different versions of your Lambda Functions using attack. And when you couple that with stage variables in a P I GA way, then it allows you to gives you a flexible mechanism. Do basically move that alias around among your Lambda Functions versions. On the back of that announcement, we also announce another feature called Traffic Shifting and What Traffic Shifting. A last customers to do is basically updating additional versions off Lander Seen whites. So now you assign whites 2 different aliases in Lambda Functions, and now the invocation traffic that comes it will be routed to new function versions based on that weight specified. The easiest way to look at this. He's your You want to test a new version of your Lambda Console. You put it on a beta or in a development or and I don't know, a be testing kind of alias, and then you only 0.0.5 percent of the traffic. Then you can start getting some feedback on whether whether that code is executing properly and slowly, you can roll out this new version if everything goes well,
+
+spk_1 : so the concept of of a canary deploy just to make sure folks who might not have heard of that before made that you do a small percentage of the deployment and any monitor. So you're saying, Did I change anything? Did I make it perform worse? Am I getting errors, et cetera, And you're only affecting a small percentage of the fleet. And with Sam, you can define you know how much percent you're going for, how long you're waiting. How long is it till it's good? Do I want to run for five minutes or 30 minutes? Sort of. I I need to be sure that I know that it's good before it keeps on rolling at. We can just roll straight and say, Hey, every 10 minutes, expand the pool type thing,
+
+spk_2 : Correct. So look with lambda, you can define off these parameters yourself Now. Now, customers have aliases and trusted traffic shifting functionality, but sometimes customer wants. They want something simpler. They don't want to get into the weeds of customizing all this pipeline, and we also launched about a year ago. A turnkey implementation of this functionality help AWS codedeploy, and what it's doing is basically traffic shifted. Deployments can be declared in the same template. So now with a a couple of lines of code in the same template codedeploy, we'll manage the function, roll out a spot of confirmation stack update there a couple of alarms that you can configure to trigger a roll back if something goes wrong. So because this is a turnkey solution, you don't have all the flavors and all the options available, But you have a handful of ones you have canary. You can deploy a percentage of traffic to the canary for a given amount of time on been provided that you're not trigger in the car. Watch alarm and it's gonna go is gonna basically increase that traffic by 10%. And then we have other types off linear deployments. You get about 10 different deployment perfect.
+
+spk_1 : And the other thing to consider as well. If you don't want to do the canary approaches that blue green approach and again just to clarify turns. Blue greens were having existing set up. You deploy completely and that new set up you switch across 2. Maintaining that's the green one maintaining the blue one. And if you need to switch backers stuff went bad. You just flick back to the blue ones they haven't kind of destroyed over. Returned anything in the past. Begin. Sam Cohen could do that.
+
+spk_2 : Correct. Correct. You have some pretty fine options all if you don't want to use the Sam option than you can obviously tweak these palaces and traffic shifting parameters to do it yourself.
+
+spk_1 : Yes, so you have lots of flexibility about visioning and those types of stuff. So you mentioned that Sam and Sam see Ally Open source. So happen people contribute, correct.
+
+spk_2 : So, look, the's 2 tools are becoming increasingly popular, but we're also accepting pulled requests. So those that are filling collaborative please go to the Italy It's lab organization and get up. We're gonna be sharing those reports on the notes of this as well.
+
+spk_1 : And what about getting started over so you could sort of jumping to get hop in and go to that that repot in start doing stuff, But what's a good way to start? A farm may be familiar with surveillance, but new toe to this particular wife to point
+
+spk_2 : a lance. What you didn't ask first. So if you're not familiar with syphilis way, have Italy is a training that's actually a website. Italy is that training is not a dot com website, and it has over. I think it's over. Hundreds of Redis little training courses available, some of which are related to several lists, and Italy its land, if you are familiar with several, is in a website. You confined tutorials for building several applications on the 2 Get Hub Repose for Sam and Sam Cli, you confined examples that you can use pool and start playing with them. You can also use the several application repositories a lot off our customers and some Amazonian CNI also shared code there. So you can you just get started. Tried out, deployed tweaker. The aid of this blogger is always a good source of good information, so they're significant number off blockers written about Sam and the same See lime and look, I think the best way of learning it's just doing it. So just go find some code and deploy it and you'll see how we see Sam Sam See Ally make up several application development for builders
+
+spk_1 : and something we didn't mention is which languages you can use Sam with, because there are there any limitations that we should be considering. Yeah.
+
+spk_2 : Look, Italy is Lambda 2. Die supports more than harmful off languages. You have. Ethan knows Power shell, Ruby C sharp. What? And I'm probably missing one or 2
+
+spk_1 : guys in there as well. Way
+
+spk_2 : have. Ah ah! An AP I wrong time A swell. So now in you can import. You're on your own. Rome time with Sam. We have I subset of those of the moment moment, but most of those. So we have the native support for iPhone. No, no, Jess C sharp and go,
+
+spk_1 : I think jobbers Well. Jobs? Yes. Didn't I mention it now on DS? Sam is a bit of a character, actually. So there's this squirrel sticker I see around us. What to do with that,
+
+spk_2 : Sam is for some reason, he
+
+spk_0 : is one of
+
+spk_2 : the the only Italy A service that has a mascot. The story behind it, I think I think it would be great. I
+
+spk_1 : was quite sure where he came
+
+spk_2 : from their Smith's. But what I've been told is that Sam left behind a cozy live in the trees to help AWS builders 2 bill several certifications effectively and more easily
+
+spk_1 : we'll go with that. It's a cute little. It's a cute little mascot. And if you grab on our stickers around the place, Gerard, I'm noticing your laptop on the desk here. It's It's decidedly devoid of any stickers. Oh, yes. I don't know if you have any developer, Craig. I'm sorry.
+
+spk_2 : Yeah, I know. I have a strong opinion on that.
+
+spk_1 : Oh, you're you're a a nudist when it comes to left or exactly 3, 2 capes. I definitely think, as you can see from our lifetime, which can't buy for one, exactly Any other closing thoughts of things you like to share.
+
+spk_2 : I am very passionate about civilised. And I've seen her customers have it that I've embraced it have become faster. Their ability to push coast faster hasn't increased significantly. The quality of the software off swell the developer, not only productivity would have a real happiness on Victor. The caliber that has to use several is before you know that. You know, there's there's no way back. I think several is a game changer for developers. You get more development speed, you get quality by focusing more on the business. That or in the business function that your code in full supposed to thinking about servers and all these menial task that we used to care for the last couple of decades. That's, Ah, I'll encourage every builder out there to join the severest revolution.
+
+spk_1 : It's definitely a better way. That and I hastened to it because I know people get a little frustrating is like, Well, it's not magic doesn't know wave your magic wand and life is a perfectly beautiful You know that still still work to be done and edges 2 knockoff and frustrations you have along the way. But I would agree. Deities. It is ways, and certainly when I and pick up a project of doing something, I always start with syphilis first and only see if I can't do it that way. Will I do it some other way because it's so much quicker and there's a lot of things you just don't have to think about. But interesting is the new generation developers air coming through. I notice they don't have a perspective on what it used to be like. Now I sound like old manuals. That cloud, yeah, you know how hard it was to just set up a server with right libraries to run your code was a thing,
+
+spk_2 : Direct Connect. But we're not a thing anymore. Um, if you are still living in that world, I suggest that you take a look. A serverless?
+
+spk_1 : Yeah. You can solve a lot of problems. Excellent. Gerardo. Thanks for coming on today. My pleasure. It makes for listing. Would you like to get your feedback anyways? Podcast today Amazon dot com It's a place to do that until next time, keep on building.
