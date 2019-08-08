@@ -9,6 +9,10 @@ module.exports = {
           key: fs.readFileSync('./certs/example.com+5-key.pem'),
           cert: fs.readFileSync('./certs/example.com+5.pem'),
     },
-    hotOnly: false,
+    hotOnly: false
   },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/acoustic-podcast/'
+    : '/'
+
 }
