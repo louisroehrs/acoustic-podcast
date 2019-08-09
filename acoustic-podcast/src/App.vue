@@ -1,7 +1,7 @@
 <template>
 <v-app id="podcast">
   <v-navigation-drawer
-    v-model="drawer"
+    v-model="left"
     app
     clipped
     >
@@ -9,7 +9,7 @@
       <v-list-item
         v-for="item in items"
         :key="item.text"
-        @click=""
+        @click="item.href"
         >
         <v-list-item-action>
           <v-icon>{{ item.icon }}</v-icon>
@@ -100,6 +100,8 @@
       fill-height
       fill-width
       >
+                  <iframe frameborder="0" width=100%  src="https://search-podcast-esdoma-13piomok4eeyn-rli5hmc3qjmhvasx4iqvk2adq4.us-east-1.es.amazonaws.com/_plugin/kibana/app/kibana#/dashboard/5e4cc730-9e5c-11e8-afe0-9d62d25a7fe1?embed=true&_g=()"  height=100% ></iframe>
+<!--
       <v-tabs-items height=100%
                     v-model="currentTab"
                     >
@@ -133,7 +135,7 @@
           </v-card>
         </v-tab-item>
         
-      </v-tabs-items>
+      </v-tabs-items> -->
     </v-container>
     
   </v-content>
@@ -165,7 +167,7 @@ export default {
     currentTab:1,
     left:true,
     items: [
-      { icon: 'trending_up', text: 'Most Popular' },
+      { icon: 'trending_up', text: 'Analytics' },
       { icon: 'subscriptions', text: 'Subscriptions' },
       { icon: 'history', text: 'History' },
       { icon: 'featured_play_list', text: 'Playlists' },
