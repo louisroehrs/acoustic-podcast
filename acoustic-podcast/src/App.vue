@@ -4,16 +4,17 @@
     v-model="left"
     app
     clipped
-    >
+		>
     <v-list dense>
       <v-list-item
         v-for="item in items"
         :key="item.text"
-        @click="item.href"
+				router :to="item.route"
         >
-        <v-list-item-action>
-          <v-icon>{{ item.icon }}</v-icon>
-        </v-list-item-action>
+          <v-list-item-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-action>
+					</router-link>
         <v-list-item-content>
           <v-list-item-title>
             {{ item.text }}
@@ -95,13 +96,15 @@
   </v-app-bar>
   
   <v-content>
+		<router-view ></router-view>
     <v-container
       fluid
       fill-height
       fill-width
-      >
-                  <iframe frameborder="0" width=100%  src="https://search-podcast-esdoma-13piomok4eeyn-rli5hmc3qjmhvasx4iqvk2adq4.us-east-1.es.amazonaws.com/_plugin/kibana/app/kibana#/dashboard/5e4cc730-9e5c-11e8-afe0-9d62d25a7fe1?embed=true&_g=()"  height=100% ></iframe>
-<!--
+      >Hi 
+
+
+			There
       <v-tabs-items height=100%
                     v-model="currentTab"
                     >
@@ -109,10 +112,7 @@
                     key="1"
                     value="tab-1"
                     >
-          <v-card  height="100%" width="100%">
-            <v-card-text >10</v-card-text>
-            <iframe border="#14183c" width=100%  src="https://search-podcast-esdoma-13piomok4eeyn-rli5hmc3qjmhvasx4iqvk2adq4.us-east-1.es.amazonaws.com/_plugin/kibana/app/kibana#/dashboard/5e4cc730-9e5c-11e8-afe0-9d62d25a7fe1?embed=true&_g=()"  height=100% ></iframe>
-          </v-card>
+Tab 1
         </v-tab-item>
         
         <v-tab-item
@@ -121,8 +121,12 @@
           >
           <v-card flat>
             <v-card-text >2</v-card-text>
-            
-            <iframe border="#14183c" width=100%  src="https://search-podcast-esdoma-13piomok4eeyn-rli5hmc3qjmhvasx4iqvk2adq4.us-east-1.es.amazonaws.com/_plugin/kibana/app/kibana#/dashboard/5e4cc730-9e5c-11e8-afe0-9d62d25a7fe1?embed=true&_g=()"  height=100% ></iframe>
+          </v-card>
+          <v-card flat>
+            <v-card-text >455</v-card-text>
+          </v-card>
+          <v-card flat>
+            <v-card-text >4</v-card-text>
           </v-card>
         </v-tab-item>
         
@@ -135,7 +139,7 @@
           </v-card>
         </v-tab-item>
         
-      </v-tabs-items> -->
+      </v-tabs-items> 
     </v-container>
     
   </v-content>
@@ -153,25 +157,32 @@
 </template>
 
 <script>
-import AcousticLogo from './components/AcousticLogo';
+	import AcousticLogo from './components/AcousticLogo';
+	import HelloWorld from './components/HelloWorld';
+	import Woofie from './views/Woofie';
+	import Analytics from './views/Analytics';
+	import Subscriptions from './views/Subscriptions';
 
-export default {
+	
+	export default {
   props: {
-    source: String,
+  source: String,
   },
   components: {
-    AcousticLogo
+    AcousticLogo,
+    HelloWorld,
+  	Woofie
   },
   
   data: () => ({
     currentTab:1,
-    left:true,
+    left:false,
     items: [
-      { icon: 'trending_up', text: 'Analytics' },
-      { icon: 'subscriptions', text: 'Subscriptions' },
-      { icon: 'history', text: 'History' },
-      { icon: 'featured_play_list', text: 'Playlists' },
-      { icon: 'watch_later', text: 'Watch Later' },
+      { icon: 'trending_up', text: 'Analytics', route:'/analytics' },
+      { icon: 'subscriptions', text: 'Subscriptions', route:'/subscriptions' },
+      { icon: 'history', text: 'History', route:'/woofie' },
+      { icon: 'featured_play_list', text: 'Playlists', route:'/helloworld' },
+      { icon: 'watch_later', text: 'Watch Later', route:'/helloworld' },
     ],
     items2: [
       { gender: "men", picture: 28, text: 'Louis' },
